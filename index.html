@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ninetees 🌩️ | Tienda oficial</title>
+    <link rel="stylesheet" href="saas/custom.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header id="home">
+      <div class="px-3">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <a
+              href="/"
+              class="navbar-brand d-flex align-items-center"
+              style="gap: 10px"
+            >
+              <img
+                src="img/logo-ninetees.png"
+                alt="90s Logo"
+                width="75"
+                height="75"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a href="galeria.html" class="nav-link">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a href="sobre-nosotros.html" class="nav-link"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <form class="d-flex me-3" role="search">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="🔍"
+                    aria-label="Search"
+                  />
+                </form>
+                <div class="text-end me-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Acción no disponible aún 😁"
+                  >
+                    Buscar
+                  </button>
+                </div>
+
+                <div class="dropdown me-3">
+                  <a
+                    class="text-white position-relative"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-cart3"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><h6 class="dropdown-header">Tu carrito</h6></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item">Ver carrito</a></li>
+                    <li>
+                      <a class="dropdown-item">Finalizar compra</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="dropdown">
+                  <a
+                    class="text-white"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-person-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><h6 class="dropdown-header">Mi cuenta</h6></li>
+                    <li>
+                      <a class="dropdown-item">Log In</a>
+                    </li>
+                    <li><a class="dropdown-item">Registrarse</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item">Mi perfil</a></li>
+                    <li><a class="dropdown-item">Mis pedidos</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="container text-center">
+        <h1
+          class="text-white"
+        >
+          Welcome to Ninetees
+        </h1>
+        <p class="text-white fs-4">
+          Las 👕 con más rollo de todo el planeta 🤘🏻
+        </p>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
+    <section class="container d-none d-xl-block">
+      <div
+        class="row text-center d-flex justify-content-center align-items-center min-vh-100"
+      >
+        <div class="col">
+          <h1 class="display-4 fw-bold">Antes de comenzar...</h1>
+          <p class="lead">
+            ¿Quieres ver los datos de la semana? o... ¿directamente nuestra
+            tienda? 🌩️
+          </p>
+          <button
+            class="btn btn-primary m-2"
+            onclick="document.getElementById('datos-semana').scrollIntoView({behavior: 'smooth'});"
+          >
+            Datos de la semana
+          </button>
+
+          <button
+            class="btn btn-secondary m-2"
+            onclick="document.getElementById('tienda').scrollIntoView({behavior: 'smooth'});"
+          >
+            Merchandising brutal
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container mb-5" id="datos-semana">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide my-5 d-none d-xl-block"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-bs-active="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="img/moscow-1991.png"
+              class="d-block w-100"
+              alt="Moscow 1991 Metallica"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-titulo">Metallica - Moscow 1991</h5>
+              <p class="carousel-entradilla">
+                Nada más y nada menos que 1.6 millones de personas.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="img/gunsnroses-1992.webp"
+              class="d-block w-100"
+              alt="Tokyo 1992 Guns N' Roses"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-titulo">Guns N' Roses - Tokyo 1992</h5>
+              <p class="carousel-entradilla">
+                Saltando de lado a lado durante más de 3 horas.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="img/nirvana-1993.webp"
+              class="d-block w-100"
+              alt="Nirvana 1993"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-titulo">
+                Nirvana - Unplugged in New York 1993
+              </h5>
+              <p class="carousel-entradilla">
+                El disco que marcó una generación.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="row text-center mt-5" id="tienda">
+        <div class="col">
+          <h1 class="display-4 fw-bold mt-5">Nuestra Tienda</h1>
+          <p class="lead">Explora, y no te olvides de comprar... 😎</p>
+        </div>
+      </div>
+
+      <div class="row g-4 my-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-redhotchillipeppers.png"
+              class="card-img-top"
+              alt="Camiseta Red Hot Chili Peppers"
+              data-bs-toggle="tooltip"
+              title="Camiseta Red Hot Chilli Peppers"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Camiseta oficial de los Red Hot Chili Peppers con el logo icónico de la banda. 100% algodón."
+              >
+                Camiseta RHCP
+              </h5>
+              <p class="card-text flex-grow-1">
+                Camiseta oficial de los Red Hot Chili Peppers con el logo
+                icónico de la banda. 100% algodón.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€24.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-nirvana.png"
+              class="card-img-top"
+              alt="Camiseta Nirvana"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="La clásica camiseta con la cara sonriente de Nirvana. Corte unisex y calidad premium."
+              >
+                Camiseta Nirvana Smiley
+              </h5>
+              <p class="card-text flex-grow-1">
+                La clásica camiseta con la cara sonriente de Nirvana. Corte
+                unisex y calidad premium.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€22.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-gunsnroses.png"
+              class="card-img-top"
+              alt="Camiseta Guns N' Roses"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Diseño clásico con el logo de las pistas entrelazadas. Para los auténticos fans del rock."
+              >
+                Camiseta Guns N' Roses
+              </h5>
+              <p class="card-text flex-grow-1">
+                Diseño clásico con el logo de las pistas entrelazadas. Para los
+                auténticos fans del rock.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€26.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-metallica.png"
+              class="card-img-top"
+              alt="Camiseta Metallica"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Logo escudo de Metallica en negro sobre camiseta negra. Perfecta para conciertos."
+              >
+                Camiseta Metallica
+              </h5>
+              <p class="card-text flex-grow-1">
+                Logo escudo de Metallica en negro sobre camiseta negra. Perfecta
+                para conciertos.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€25.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-pearljam.png"
+              class="card-img-top"
+              alt="Camiseta Pearl Jam"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Diseño de la manzana Stickman, icónico de la banda. Algodón orgánico."
+              >
+                Camiseta Pearl Jam
+              </h5>
+              <p class="card-text flex-grow-1">
+                Diseño de la manzana Stickman, icónico de la banda. Algodón
+                orgánico.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€23.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-bonjovi.png"
+              class="card-img-top"
+              alt="Camiseta Bon Jovi"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Logo clásico de Bon Jovi en rojo y negro. Edición especial 90s."
+              >
+                Camiseta Bon Jovi
+              </h5>
+              <p class="card-text flex-grow-1">
+                Logo clásico de Bon Jovi en rojo y negro. Edición especial 90s.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€21.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-radiohead.png"
+              class="card-img-top"
+              alt="Camiseta Radiohead"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Diseño minimalista con el oso de 'Kid A'. Para fans del rock alternativo."
+              >
+                Camiseta Radiohead
+              </h5>
+              <p class="card-text flex-grow-1">
+                Diseño minimalista con el oso de "Kid A". Para fans del rock
+                alternativo.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€24.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-smashingpumpkins.png"
+              class="card-img-top"
+              alt="Camiseta The Smashing Pumpkins"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Logo Zero de Mellon Collie. Una de las camisetas más buscadas por los coleccionistas."
+              >
+                Camiseta Smashing Pumpkins
+              </h5>
+              <p class="card-text flex-grow-1">
+                Logo Zero de Mellon Collie. Una de las camisetas más buscadas
+                por los coleccionistas.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€27.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-direstraits.png"
+              class="card-img-top"
+              alt="Camiseta Dire Straits"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Diseño Brothers in Arms. Para los amantes del rock clásico y bien hecho."
+              >
+                Camiseta Dire Straits
+              </h5>
+              <p class="card-text flex-grow-1">
+                Diseño Brothers in Arms. Para los amantes del rock clásico y
+                bien hecho.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€23.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-oasis.png"
+              class="card-img-top"
+              alt="Camiseta Oasis"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Logo de Definitely Maybe. La esencia del Britpop en tu armario."
+              >
+                Camiseta Oasis
+              </h5>
+              <p class="card-text flex-grow-1">
+                Logo de Definitely Maybe. La esencia del Britpop en tu armario.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€22.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-u2.png"
+              class="card-img-top"
+              alt="Camiseta U2"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Diseño The Joshua Tree. Una de las bandas más influyentes de la historia."
+              >
+                Camiseta U2
+              </h5>
+              <p class="card-text flex-grow-1">
+                Diseño The Joshua Tree. Una de las bandas más influyentes de la
+                historia.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€24.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/camiseta-blur.png"
+              class="card-img-top"
+              alt="Camiseta Blur"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5
+                class="card-title"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="Logo Parklife. Representa la rivalidad con Oasis en los 90s."
+              >
+                Camiseta Blur
+              </h5>
+              <p class="card-text flex-grow-1">
+                Logo Parklife. Representa la rivalidad con Oasis en los 90s.
+              </p>
+              <div class="mt-auto">
+                <p class="h4 text-primary fw-bold">€23.99</p>
+                <button class="btn btn-primary w-100" id="anadir-carrito">
+                  <i class="fas fa-cart-plus me-2"></i>Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="container d-none d-xl-block">
+        <div class="row text-center my-5">
+          <div class="col">
+            <h1 class="display-4 fw-bold">Nuestros diseños</h1>
+            <p class="lead">
+              ¡Los diseños mejor votados por nuestra comunidad! ⭐
+            </p>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-primary table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Camiseta</th>
+                <th scope="col">Banda</th>
+                <th scope="col">Valoración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Diseño Metallica</td>
+                <td>Metallica</td>
+                <td>4.8 / 5</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Diseño Nirvana</td>
+                <td>Nirvana</td>
+                <td>4.7 / 5</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Diseño Guns N' Roses</td>
+                <td>Guns N' Roses</td>
+                <td>4.7 / 5</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Diseño Red Hot Chili Peppers</td>
+                <td>Red Hot Chili Peppers</td>
+                <td>4.6 / 5</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Diseño Pearl Jam</td>
+                <td>Pearl Jam</td>
+                <td>4.5 / 5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-secondary text-light py-4 mt-auto">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div class="mb-3 mb-md-0">
+          <span>&copy; 2025 Ninetees</span>
+        </div>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a class="text-light text-decoration-none">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-light text-decoration-none">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-light text-decoration-none">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="anadir-carrito-toast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header bg-primary">
+          <strong class="me-auto">Añadir producto al carrito</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="toast-body">Actualmente en desarrollo, ¡lo sentimos! 🥹</div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        if (header) {
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > 500) {
+              header.classList.add("scrolled");
+            } else {
+              header.classList.remove("scrolled");
+            }
+          });
+        }
+
+        const botonesAnadirCarrito = document.querySelectorAll(
+          '[id^="anadir-carrito"]'
+        );
+
+        if (botonesAnadirCarrito.length > 0) {
+          botonesAnadirCarrito.forEach((boton) => {
+            boton.addEventListener("click", function (event) {
+              event.preventDefault();
+
+              const toastElement = document.getElementById(
+                "anadir-carrito-toast"
+              );
+              if (toastElement && typeof bootstrap !== "undefined") {
+                const toast = new bootstrap.Toast(toastElement);
+                toast.show();
+              }
+            });
+          });
+        }
+
+        if (typeof bootstrap !== "undefined") {
+          var tooltipTriggerList = [].slice.call(
+            document.querySelectorAll('[data-bs-toggle="tooltip"]')
+          );
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
