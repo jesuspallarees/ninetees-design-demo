@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -25,6 +25,7 @@
       rel="stylesheet"
     />
     <script src="/ninetees-demo/bootstrap.bundle.min.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -61,6 +62,11 @@
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
                 <li class="nav-item">
                   <a href="index.html" class="nav-link">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a href="video-semanal.html" class="nav-link"
+                    >Video Semanal</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a href="galeria.html" class="nav-link">Galería</a>
@@ -163,14 +169,14 @@
     <main class="container my-3">
       <div class="row text-center mb-4">
         <div class="col">
-          <h1 class="display-4 fw-bold mt-3">Sobre Nosotros</h1>
-          <p class="lead">
+          <h1 class="display-4 fw-bold mt-3" data-aos="fade-left">Sobre Nosotros</h1>
+          <p class="lead" data-aos="fade-right">
             ¿Quieres conocernos o incluso trabajar con nosotros? 👀
           </p>
         </div>
       </div>
 
-      <div class="row mx-1">
+      <div class="row mx-1" data-aos="fade-up">
         <div id="sobre-nosotros-info">
           <h2>¿Quiénes somos?</h2>
           <p>Debes de conocer nuestra historia antes de nada...</p>
@@ -211,7 +217,7 @@
           </p>
         </div>
 
-        <div id="cuestionario">
+        <div id="cuestionario" data-aos="fade-up">
           <h2>Únete a Nuestro Equipo</h2>
           <p>
             ¿Eres tan apasionado del rock de los 90 como nosotros? ¡Trabaja con
@@ -440,7 +446,9 @@
             aria-label="Cerrar"
           ></button>
         </div>
-        <div class="toast-body">Actualmente en desarrollo, ¡lo sentimos! 🥹</div>
+        <div class="toast-body">
+          Actualmente en desarrollo, ¡lo sentimos! 🥹
+        </div>
       </div>
     </div>
 
@@ -462,7 +470,7 @@
           boton.addEventListener("click", function (event) {
             event.preventDefault();
             const toast = new bootstrap.Toast(
-              document.getElementById("anadir-carrito-toast")
+              document.getElementById("anadir-carrito-toast"),
             );
             toast.show();
           });
@@ -470,12 +478,19 @@
 
         if (typeof bootstrap !== "undefined") {
           var tooltipTriggerList = [].slice.call(
-            document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            document.querySelectorAll('[data-bs-toggle="tooltip"]'),
           );
           var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
           });
         }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
       });
     </script>
   </body>

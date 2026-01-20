@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FLMDGJLNJJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FLMDGJLNJJ");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ninetees 🌩️ | Tienda oficial</title>
+    <link rel="stylesheet" href="saas/custom.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="/ninetees-demo/bootstrap.bundle.min.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="home">
+      <div class="px-3">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <a
+              href="/"
+              class="navbar-brand d-flex align-items-center"
+              style="gap: 10px"
+            >
+              <img
+                src="img/logo-ninetees.svg"
+                alt="90s Logo"
+                width="75"
+                height="75"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a href="video-semanal.html" class="nav-link active"
+                    >Video Semanal</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="galeria.html" class="nav-link">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a href="sobre-nosotros.html" class="nav-link"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <form class="d-flex me-3" role="search">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="🔍"
+                    aria-label="Search"
+                  />
+                </form>
+                <div class="text-end me-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Acción no disponible aún 😁"
+                  >
+                    Buscar
+                  </button>
+                </div>
+
+                <div class="dropdown me-3">
+                  <a
+                    class="text-white position-relative"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-cart3"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><h6 class="dropdown-header">Tu carrito</h6></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item">Ver carrito</a></li>
+                    <li>
+                      <a class="dropdown-item">Finalizar compra</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="dropdown">
+                  <a
+                    class="text-white"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-person-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><h6 class="dropdown-header">Mi cuenta</h6></li>
+                    <li>
+                      <a class="dropdown-item">Log In</a>
+                    </li>
+                    <li><a class="dropdown-item">Registrarse</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item">Mi perfil</a></li>
+                    <li><a class="dropdown-item">Mis pedidos</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero-video-semanal">
+      <video class="hero-video-bg" autoplay muted loop playsinline>
+        <source
+          src="../videos/background-proyecto-final.webm"
+          type="video/webm"
+        />
+        Tu navegador no soporta videos HTML5.
+      </video>
+
+      <div class="container text-center">
+        <h1 class="text-white" data-aos="fade-left">El video de esta semana es...</h1>
+        <p class="text-white fs-4" data-aos="fade-right">
+          5 de los más 🔝 que podemos encontrar en la 🏭
+        </p>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
+    <section class="container w-75 mx-auto mt-5" data-aos="fade-up">
+      <div class="video-container position-relative">
+        <video id="simple-video" class="w-100">
+          <source src="../videos/video-proyecto-final.webm" type="video/webm" />
+        </video>
+
+        <div
+          class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-50"
+        >
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-primary btn-sm video-btn-play">
+              <i class="fa fa-play" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-outline-light btn-sm video-btn-mute">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-outline-light btn-sm video-btn-fullscreen">
+              <i class="fa fa-expand" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const simpleVideo = document.getElementById("simple-video");
+        const playBtn = document.querySelector(".video-btn-play");
+        const muteBtn = document.querySelector(".video-btn-mute");
+        const fullscreenBtn = document.querySelector(".video-btn-fullscreen");
+
+        playBtn.addEventListener("click", () => {
+          if (simpleVideo.paused) {
+            simpleVideo.play();
+            playBtn.innerHTML =
+              '<i class="fa fa-pause" aria-hidden="true"></i>';
+            playBtn.classList.remove("btn-primary");
+            playBtn.classList.add("btn-primary");
+          } else {
+            simpleVideo.pause();
+            playBtn.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
+            playBtn.classList.remove("btn-primary");
+            playBtn.classList.add("btn-primary");
+          }
+        });
+
+        muteBtn.addEventListener("click", () => {
+          simpleVideo.muted = !simpleVideo.muted;
+          muteBtn.innerHTML = simpleVideo.muted
+            ? '<i class="fas fa-volume-mute"></i>'
+            : '<i class="fa fa-volume-up" aria-hidden="true" ></i>';
+        });
+
+        fullscreenBtn.addEventListener("click", () => {
+          if (!document.fullscreenElement) {
+            simpleVideo.parentElement.requestFullscreen();
+          } else {
+            document.exitFullscreen();
+          }
+        });
+      </script>
+    </section>
+
+    <main class="container mb-5" id="datos-semana"></main>
+
+    <footer class="bg-secondary text-light py-4 mt-auto">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div class="mb-3 mb-md-0">
+          <span>&copy; 2025 Ninetees</span>
+        </div>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a class="text-light text-decoration-none">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-light text-decoration-none">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-light text-decoration-none">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="anadir-carrito-toast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header bg-primary">
+          <strong class="me-auto">Añadir producto al carrito</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="toast-body">
+          Actualmente en desarrollo, ¡lo sentimos! 🥹
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        if (header) {
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > 500) {
+              header.classList.add("scrolled");
+            } else {
+              header.classList.remove("scrolled");
+            }
+          });
+        }
+
+        const botonesAnadirCarrito = document.querySelectorAll(
+          '[id^="anadir-carrito"]',
+        );
+
+        if (botonesAnadirCarrito.length > 0) {
+          botonesAnadirCarrito.forEach((boton) => {
+            boton.addEventListener("click", function (event) {
+              event.preventDefault();
+
+              const toastElement = document.getElementById(
+                "anadir-carrito-toast",
+              );
+              if (toastElement && typeof bootstrap !== "undefined") {
+                const toast = new bootstrap.Toast(toastElement);
+                toast.show();
+              }
+            });
+          });
+        }
+
+        if (typeof bootstrap !== "undefined") {
+          var tooltipTriggerList = [].slice.call(
+            document.querySelectorAll('[data-bs-toggle="tooltip"]'),
+          );
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+          });
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("player", {
+          height: "360",
+          width: "640",
+          videoId: "E4ScPro8YcI",
+          playerVars: {
+            controls: 0,
+            rel: 0,
+          },
+        });
+      }
+
+      function playVideo() {
+        player.playVideo();
+      }
+      function pauseVideo() {
+        player.pauseVideo();
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+
+      function volumeUp() {
+        let currentVol = player.getVolume();
+        if (currentVol < 100) player.setVolume(currentVol + 10);
+      }
+
+      function volumeDown() {
+        let currentVol = player.getVolume();
+        if (currentVol > 0) player.setVolume(currentVol - 10);
+      }
+
+      const myModal = document.getElementById("videoModal");
+      myModal.addEventListener("hidden.bs.modal", function () {
+        player.stopVideo();
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

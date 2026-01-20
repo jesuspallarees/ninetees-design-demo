@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FLMDGJLNJJ"
@@ -25,6 +24,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <script src="/ninetees-demo/bootstrap.bundle.min.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header id="home">
@@ -63,11 +63,7 @@
                   <a href="index.html" class="nav-link active">Tienda</a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link btn btn-link"
-                    data-bs-toggle="modal"
-                    data-bs-target="#videoModal"
-                    href="#"
+                  <a href="video-semanal.html" class="nav-link"
                     >Video Semanal</a
                   >
                 </li>
@@ -171,15 +167,15 @@
 
     <section id="hero">
       <div class="container text-center">
-        <h1 class="text-white">Welcome to Ninetees</h1>
-        <p class="text-white fs-4">
+        <h1 class="shine" data-aos="zoom-in">Welcome to Ninetees</h1>
+        <p class="text-white fs-4" data-aos="fade-up" data-aos-delay="300">
           Las 👕 con más rollo de todo el planeta 🤘🏻
         </p>
       </div>
       <div class="hero-overlay"></div>
     </section>
 
-    <section class="container d-none d-xl-block">
+    <section class="container d-none d-xl-block" data-aos="fade-left">
       <div
         class="row text-center d-flex justify-content-center align-items-center min-vh-100"
       >
@@ -191,14 +187,22 @@
           </p>
           <button
             class="btn btn-primary m-2"
-            onclick="document.getElementById('datos-semana').scrollIntoView({behavior: 'smooth'});"
+            onclick="
+              document
+                .getElementById('datos-semana')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
           >
             Datos de la semana
           </button>
 
           <button
             class="btn btn-secondary m-2"
-            onclick="document.getElementById('tienda').scrollIntoView({behavior: 'smooth'});"
+            onclick="
+              document
+                .getElementById('tienda')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
           >
             Merchandising brutal
           </button>
@@ -206,7 +210,9 @@
       </div>
     </section>
 
-    <main class="container mb-5" id="datos-semana">
+    <!-- <img src="img/guitarra.svg" height="450">x -->
+
+    <main class="container mb-5" id="datos-semana" data-aos="fade-right">
       <div
         id="carouselExampleCaptions"
         class="carousel slide my-5 d-none d-xl-block"
@@ -307,7 +313,7 @@
 
       <div class="row g-4 my-5">
         <div class="col-md-6 col-lg-3">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm" data-aos="zoom-in">
             <img
               src="img/camiseta-redhotchillipeppers.png"
               class="card-img-top"
@@ -338,7 +344,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-nirvana.png"
@@ -368,7 +374,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-gunsnroses.png"
@@ -398,7 +404,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-metallica.png"
@@ -428,7 +434,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-pearljam.png"
@@ -458,7 +464,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-bonjovi.png"
@@ -487,7 +493,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-radiohead.png"
@@ -517,7 +523,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-smashingpumpkins.png"
@@ -547,7 +553,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-direstraits.png"
@@ -577,7 +583,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-oasis.png"
@@ -606,7 +612,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-u2.png"
@@ -636,7 +642,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
           <div class="card h-100 shadow-sm">
             <img
               src="img/camiseta-blur.png"
@@ -665,62 +671,6 @@
           </div>
         </div>
       </div>
-
-      <section class="container d-none d-xl-block">
-        <div class="row text-center my-5">
-          <div class="col">
-            <h1 class="display-4 fw-bold">Nuestros diseños</h1>
-            <p class="lead">
-              ¡Los diseños mejor votados por nuestra comunidad! ⭐
-            </p>
-          </div>
-        </div>
-
-        <div class="table-responsive">
-          <table class="table table-primary table-striped">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Camiseta</th>
-                <th scope="col">Banda</th>
-                <th scope="col">Valoración</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Diseño Metallica</td>
-                <td>Metallica</td>
-                <td>4.8 / 5</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Diseño Nirvana</td>
-                <td>Nirvana</td>
-                <td>4.7 / 5</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Diseño Guns N' Roses</td>
-                <td>Guns N' Roses</td>
-                <td>4.7 / 5</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Diseño Red Hot Chili Peppers</td>
-                <td>Red Hot Chili Peppers</td>
-                <td>4.6 / 5</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Diseño Pearl Jam</td>
-                <td>Pearl Jam</td>
-                <td>4.5 / 5</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
     </main>
 
     <footer class="bg-secondary text-light py-4 mt-auto">
@@ -767,7 +717,9 @@
             aria-label="Cerrar"
           ></button>
         </div>
-        <div class="toast-body">Actualmente en desarrollo, ¡lo sentimos! 🥹</div>
+        <div class="toast-body">
+          Actualmente en desarrollo, ¡lo sentimos! 🥹
+        </div>
       </div>
     </div>
     <script>
@@ -784,7 +736,7 @@
         }
 
         const botonesAnadirCarrito = document.querySelectorAll(
-          '[id^="anadir-carrito"]'
+          '[id^="anadir-carrito"]',
         );
 
         if (botonesAnadirCarrito.length > 0) {
@@ -793,7 +745,7 @@
               event.preventDefault();
 
               const toastElement = document.getElementById(
-                "anadir-carrito-toast"
+                "anadir-carrito-toast",
               );
               if (toastElement && typeof bootstrap !== "undefined") {
                 const toast = new bootstrap.Toast(toastElement);
@@ -805,7 +757,7 @@
 
         if (typeof bootstrap !== "undefined") {
           var tooltipTriggerList = [].slice.call(
-            document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            document.querySelectorAll('[data-bs-toggle="tooltip"]'),
           );
           var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
@@ -813,7 +765,6 @@
         }
       });
     </script>
-
     <div
       class="modal fade"
       id="videoModal"
@@ -825,7 +776,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="videoModalLabel">
-              STRANGER THINGS (NETFLIX) - EDDIE MUNSON'S MASTER OF PUPPETS SOLO
+              STRANGER THINGS NETFLIX - EDDIE MUNSON'S MASTER OF PUPPETS COVER
             </h5>
             <button
               type="button"
@@ -854,10 +805,8 @@
         </div>
       </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      // Carga la API de YouTube de forma asíncrona
       var tag = document.createElement("script");
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName("script")[0];
@@ -868,15 +817,14 @@
         player = new YT.Player("player", {
           height: "360",
           width: "640",
-          videoId: "E4ScPro8YcI", // ID del video
+          videoId: "E4ScPro8YcI",
           playerVars: {
-            controls: 0, // Desactiva controles nativos para usar los de Bootstrap
+            controls: 0,
             rel: 0,
           },
         });
       }
 
-      // Funciones para los controles
       function playVideo() {
         player.playVideo();
       }
@@ -897,10 +845,16 @@
         if (currentVol > 0) player.setVolume(currentVol - 10);
       }
 
-      // Detener video al cerrar el modal
       const myModal = document.getElementById("videoModal");
       myModal.addEventListener("hidden.bs.modal", function () {
         player.stopVideo();
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
       });
     </script>
   </body>
