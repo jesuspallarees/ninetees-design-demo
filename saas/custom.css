@@ -1,11 +1,24 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.display-1, .display-2, .display-3, .display-4 {
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
   font-weight: 700 !important;
 }
 
@@ -80,7 +93,7 @@ main {
   overflow: hidden;
 }
 #hero-video-semanal > .container {
-  z-index: 3; /* Aumentado para estar sobre el video y overlay */
+  z-index: 3;
   position: relative;
 }
 #hero-video-semanal .hero-video-bg {
@@ -498,7 +511,6 @@ a {
   transform: scale(1.1);
 }
 
-/* Barra de controles inferior */
 .video-controls-bar {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -573,6 +585,22 @@ a {
   .video-control-btn {
     width: 35px;
     height: 35px;
+  }
+}
+#svg1 {
+  height: 60px;
+  width: 60px;
+  display: block;
+  animation: girar-horizontal 3s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes girar-horizontal {
+  from {
+    transform: perspective(400px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg);
   }
 }
 @media (max-width: 991.98px) {

@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
 
 $primary: #6c7bff;
 $secondary: #222222;
@@ -8,18 +7,26 @@ $dark: #333333;
 $info: #6c757d;
 $header-height: 90px;
 
-$headings-font-family: 'Oswald', sans-serif;
-$font-family-base: 'Roboto Condensed', sans-serif;
+$headings-font-family: "Oswald", sans-serif;
+$font-family-base: "Roboto Condensed", sans-serif;
 
 $btn-font-family: $font-family-base;
 $input-font-family: $font-family-base;
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.display-1, .display-2, .display-3, .display-4 {
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
   font-weight: 700 !important;
 }
 
@@ -97,7 +104,7 @@ main {
   overflow: hidden;
 
   > .container {
-    z-index: 3; /* Aumentado para estar sobre el video y overlay */
+    z-index: 3;
     position: relative;
   }
 
@@ -118,7 +125,7 @@ main {
     position: absolute;
     inset: 0;
     background: rgba(40, 40, 60, 0.5);
-    z-index: 2; 
+    z-index: 2;
     pointer-events: none;
   }
 }
@@ -185,7 +192,9 @@ article {
 }
 
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: none;
   overflow: hidden;
 }
@@ -252,7 +261,7 @@ a {
 }
 
 #sobre-nosotros-info {
-  background: $secondary; 
+  background: $secondary;
   color: $light;
   padding: 25px;
   border-radius: 8px;
@@ -303,7 +312,7 @@ a {
   border: 1px solid $info;
   border-radius: 4px;
   background: $dark;
-  color: $light;  
+  color: $light;
   font-size: 1rem;
 }
 
@@ -504,7 +513,6 @@ a {
   transform: scale(1.1);
 }
 
-/* Barra de controles inferior */
 .video-controls-bar {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -554,23 +562,18 @@ a {
 
 .video-paused .video-play-btn i,
 .video-paused .video-control-btn i {
-  content: "\f144" !important; 
+  content: "\f144" !important;
 }
 
 .shine {
-  background: linear-gradient(
-    to right, 
-    #bfbfbf 0%, 
-    #ffffff 50%, 
-    #6c7bff 100%  
-  );
-  
+  background: linear-gradient(to right, #bfbfbf 0%, #ffffff 50%, #6c7bff 100%);
+
   background-size: 200% auto;
-  
+
   -webkit-background-clip: text;
-  background-clip: text; 
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+
   animation: shine 3s linear infinite;
 }
 
@@ -585,10 +588,27 @@ a {
     width: 60px;
     height: 60px;
   }
-  
+
   .video-control-btn {
     width: 35px;
     height: 35px;
+  }
+}
+
+#svg1 {
+  height: 60px; 
+  width: 60px;
+  display: block;
+  animation: girar-horizontal 3s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes girar-horizontal {
+  from {
+    transform: perspective(400px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(360deg);
   }
 }
 
